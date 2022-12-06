@@ -1,0 +1,24 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+df = pd.read_csv("C:/Users/admin/Downloads/car.csv")
+print(df)
+df = pd.read_csv("C:/Users/admin/Downloads/car.csv")
+print(df)
+df.head()
+fig=plt.figure
+plt.boxplot(df['Price'])
+plt.xlabel("Price")
+plt.title("Price range of all diff car")
+fig = plt.figure()
+plt.hist(df['MPG.city'])
+plt.title("histogram")
+plt.xlabel('MPG.city')
+plt.show()
+fig = plt.figure()
+plt.scatter(df['Manufacturer'],df['Price'])
+plt.title("scatter plot")
+plt.xlabel('Manufacturer')
+plt.ylabel('Price')
+plt.show()
